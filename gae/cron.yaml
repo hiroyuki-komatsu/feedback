@@ -1,0 +1,4 @@
+cron:
+- description: priodically search job
+  url: /feedback/cron
+  schedule: every 30 mins

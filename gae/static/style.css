@@ -1,0 +1,76 @@
+div.tweet {
+    float:left;
+    width: 100%;
+    border-bottom-color: lightgray;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+div.profile {
+    float: left;
+    width: 10%;
+    text-align: center;
+    /* background: #AAFFAA */;
+}
+
+img.profile_image {
+    width: 75%;
+    height: auto;
+    max-height: 15%;
+}
+
+img.tweet_image {
+    max-width: 80%;
+    max-height: 30%;
+}
+
+div.body {
+    float: left;
+    width: 80%;
+/*     background: #AAFFFF; */
+}
+
+div.text {
+    float: left;
+    width: 100%;
+    height: auto;
+    font-size: 2em;
+/*     background: #AAAAFF; */
+}
+
+div.footer {
+    float: left;
+    width: 100%;
+    bottom: 0;
+    font-size: 1em;
+    color: #888888;
+/*     background: #FFAAAA; */
+}
+
+div.star {
+    float: left;
+    width: 10%;
+    font-size: 3em;
+    text-align: center;
+/*     background: #FFFFAA; */
+}
+
+div.media {
+    font-size: 0.5em;
+}
+
+button#more {
+    width: 60%;
+    margin-left: 10%;
+    font-size: 2em;
+}
+button#update {
+    width: 20%;
+    font-size: 2em;
+}
+
+button#stared {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 2em;
+}
