@@ -61,12 +61,23 @@ div.media {
 
 button#more {
     width: 60%;
+    height: 2em;
     margin-left: 10%;
     font-size: 2em;
+    border-style: none;
+    color: white;
+    background-color: #F44336;
+    outline: none;
 }
+
 button#update {
     width: 20%;
+    height: 2em;
     font-size: 2em;
+    border-style: none;
+    color: white;
+    background-color: #F44336;
+    outline: none;
 }
 
 button#stared {
