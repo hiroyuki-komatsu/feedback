@@ -1,5 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/*
+Header-height (div.header): 4.5em
+Body (div.contents):
+Footer-height (div.footer): 5em
+*/
+
 body {
     margin: 0%;
+    border-width: 0 0 1em 0;
+    border-style: solid;
+    border-color: #0097A7;
 }
 
 img.logo {
@@ -10,16 +25,16 @@ img.logo {
 
 div.header {
     padding: 1em;
-    background-color: #0097A7 /*#EF5350*/;
+    background-color: #0097A7;
     margin-bottom: 1em;
     color: white;
     font-size: 1.5em;
 }
 
 div.tweet {
+    padding: 1em;
     float:left;
     width: 96%;
-    padding: 2%;
 }
 
 div.profile {
@@ -73,6 +88,7 @@ span.user {
 div.star {
     float: left;
     width: 10%;
+    mergin-top: 0.5em;
     font-size: 3em;
     text-align: center;
     color: gray;
@@ -83,12 +99,17 @@ div.media {
     font-size: 0.5em;
 }
 
+div.contents {
+    height: auto;
+}
+
 div.footer {
+    padding: 1em;
     text-align: right;
 }
 
 button#more {
-    margin-right: 2em;
+    margin-right: 1em;
     width: 3em;
     height: 3em;
     border-radius: 3em;
