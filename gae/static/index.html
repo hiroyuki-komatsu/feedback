@@ -7,32 +7,36 @@
   <script type="text/javascript" src="./feedback.js"></script>
 </head>
 <body>
-  <div id="account">
-    account
+  <div class="header">
+    <img class="logo" src="/feedback/icon_32.png" />
+    <span id="account">
+      account
+    </span>
+    <span> -
+      <a id="login" href="">Login</a>
+    </span>
   </div>
-  <div>
-    <a id="login" href="">Login</a>
-  </div>
-  <hr />
   <div id="result">
     <div class="tweet" id="tweet_template">
       <div class="profile">
 	<a href="" class="profile_url" target="_blank" rel="noreferrer">
-	  <img class="profile_image" src="" />
+	  <img class="profile_image" />
 	</a>
       </div>
       <div class="body">
-        <div class="footer">
-          <span class="date">YYYY-MM-DD</span> /
+        <div class="info">
           <span class="user">user</span>
+          @<span class="screen_name">screen_name</span>
+          ・<span class="date">YYYY-MM-DD</span>
         </div>
         <div class="text">text</div>
       </div>
       <div class="star">☆</div>
     </div>
   </div>
-  <hr />
-  <button type="submit" id="more">＋</button>
-  <button type="submit" id="update">✔</button>
+  <div class="footer">
+    <button type="submit" id="update">✔</button>
+    <button type="submit" id="more">＋</button>
+  </div>
 </body>
 </html>

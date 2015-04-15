@@ -1,9 +1,25 @@
+body {
+    margin: 0%;
+}
+
+img.logo {
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+}
+
+div.header {
+    padding: 1em;
+    background-color: #0097A7 /*#EF5350*/;
+    margin-bottom: 1em;
+    color: white;
+    font-size: 1.5em;
+}
+
 div.tweet {
     float:left;
-    width: 100%;
-    border-bottom-color: lightgray;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
+    width: 96%;
+    padding: 2%;
 }
 
 div.profile {
@@ -14,9 +30,10 @@ div.profile {
 }
 
 img.profile_image {
-    width: 75%;
-    height: auto;
+    width: 4em;
+    height: 4em;
     max-height: 15%;
+    border-radius: 15%;
 }
 
 img.tweet_image {
@@ -38,7 +55,7 @@ div.text {
 /*     background: #AAAAFF; */
 }
 
-div.footer {
+div.info {
     float: left;
     width: 100%;
     bottom: 0;
@@ -47,11 +64,18 @@ div.footer {
 /*     background: #FFAAAA; */
 }
 
+span.user {
+    color: black;
+    font-weight: bold;
+/*     background: #FFAAAA; */
+}
+
 div.star {
     float: left;
     width: 10%;
     font-size: 3em;
     text-align: center;
+    color: gray;
 /*     background: #FFFFAA; */
 }
 
@@ -59,10 +83,15 @@ div.media {
     font-size: 0.5em;
 }
 
+div.footer {
+    text-align: right;
+}
+
 button#more {
-    width: 60%;
-    height: 2em;
-    margin-left: 10%;
+    margin-right: 2em;
+    width: 3em;
+    height: 3em;
+    border-radius: 3em;
     font-size: 2em;
     border-style: none;
     color: white;
@@ -71,12 +100,14 @@ button#more {
 }
 
 button#update {
-    width: 20%;
-    height: 2em;
+    margin-right: 1em;
+    width: 3em;
+    height: 3em;
+    border-radius: 3em;
     font-size: 2em;
     border-style: none;
     color: white;
-    background-color: #F44336;
+    background-color: #4DD0E1;
     outline: none;
 }
 
