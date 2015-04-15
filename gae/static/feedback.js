@@ -23,7 +23,7 @@ function setStar(id_str, element, is_set) {
     } else {
 	element.style.color = "gray";
 	sendCommand(id_str, "", function() {
-	    element.style.color = "black";
+	    element.style.color = "gray";
 	    element.innerHTML = "☆";
 	});
     }
@@ -102,9 +102,9 @@ function appendTweet(tweet) {
     new_node.getElementsByClassName('text')[0].innerHTML =
 	modifyTweet(tweet);
     new_node.getElementsByClassName('date')[0].innerHTML =
-	new Date(Date.parse(tweet.created_at)).toString();
-//    new_node.getElementsByClassName('user')[0].innerHTML =
-//        tweet.user.screen_name;
+	new Date(Date.parse(tweet.created_at)).toLocaleString();
+    new_node.getElementsByClassName('screen_name')[0].innerHTML =
+        tweet.user.screen_name;
     new_node.getElementsByClassName('user')[0].innerHTML =
         tweet.user.name;
 
