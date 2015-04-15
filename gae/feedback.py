@@ -532,7 +532,8 @@ def GetUnreadTweets(request):
       'id': max_id,
       'id_str': str(max_id),
       'text': 'no more tweets',
-      'user': { 'screen_name': 'Feedback',
+      'user': { 'name': 'Feedback',
+                'screen_name': 'Feedback',
                 'profile_image_url': '/feedback/icon_32.png', },
       }
     statuses.append(status)

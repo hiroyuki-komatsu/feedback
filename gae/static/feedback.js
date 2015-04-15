@@ -103,8 +103,10 @@ function appendTweet(tweet) {
 	modifyTweet(tweet);
     new_node.getElementsByClassName('date')[0].innerHTML =
 	new Date(Date.parse(tweet.created_at)).toString();
+//    new_node.getElementsByClassName('user')[0].innerHTML =
+//        tweet.user.screen_name;
     new_node.getElementsByClassName('user')[0].innerHTML =
-        tweet.user.screen_name;
+        tweet.user.name;
 
     var star = new_node.getElementsByClassName('star')[0];
     if (tweet.x_label == "star") {
