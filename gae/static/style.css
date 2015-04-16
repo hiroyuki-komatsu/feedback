@@ -120,6 +120,18 @@ button#more {
     outline: none;
 }
 
+button#more:active {
+    background-color: #F44336;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate( 0deg ); }
+  100% { -webkit-transform: rotate( 360deg ); }
+}
+
 button#update {
     margin-right: 1em;
     width: 3em;
