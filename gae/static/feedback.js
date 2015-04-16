@@ -246,10 +246,10 @@ function setOnButton(elementId, onFunction) {
     // More
     var element = document.getElementById(elementId);
     var brokerFunction = function() {
-	element.style.backgroundColor = "gray";
+	element.className = "loading";
 
 	onFunction(function() {
-	    element.style.backgroundColor = "";
+            element.className = "";
 	});
     };
     element.addEventListener("click", brokerFunction, false);
