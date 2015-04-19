@@ -145,6 +145,10 @@ button#update {
     outline: none;
 }
 
+button#update.loading {
+    background-color: gray;
+}
+
 button#stared {
     width: 80%;
     margin-left: 10%;
